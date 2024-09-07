@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +15,15 @@
 <nav class="navbar">
     <div class="navbar-center">
         <span class="nav-icon">
-            <i class="fas fa-bars"></i>
-        </span>
+              <i class="fas fa-bars" id="menu-icon"></i>
+        </span>     
+              <ul class="nav-list" id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            
         <img src="./images/logo.svg" alt="store logo">
         <div class="cart-btn">
           <span class="nav-icon">
@@ -28,7 +36,7 @@
 <!--end of navbar-->
 
 <!--hero-->
-<header class="hero">
+<header class="home" id="home">
     <div class="banner">
         <h1 class="banner-title">furniture collection</h1>
         <button class="banner-btn">shop now</button>
@@ -38,7 +46,7 @@
 <!--end of hero-->
 
 <!--product-->
-<section class="products">
+<section class="products" id="products">
     <div class="section-title">
         <h2>our products</h2>
     </div>
@@ -135,7 +143,7 @@
         <h4>$32.99</h4>
     </article>
 
-    <article class="product">
+    <article class="product" id="products">
         <div class="img-container">
             <img src="./images/product-8.jpeg" alt="product" 
             class="product-img">
@@ -147,7 +155,112 @@
         <h3>table</h3>
         <h4>$19.99</h4>
     </article>
+    <article class="product">
+        <div class="img-container">
+            <img src="./images/download-4.jpeg" alt="product" 
+            class="product-img">
+            <button class="bag-btn" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+            </button>
+        </div>
+        <h3>cushing chair</h3>
+        <h4>$19.99</h4>
+    </article>
+    <article class="product">
+        <div class="img-container">
+            <img src="./images/download-3.jpg" alt="product" 
+            class="product-img">
+            <button class="bag-btn" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+            </button>
+        </div>
+        <h3>two sitter chair</h3>
+        <h4>$19.99</h4>
+    </article>
+    <article class="product">
+        <div class="img-container">
+            <img src="./images/download-2.jpg" alt="product" 
+            class="product-img">
+            <button class="bag-btn" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+            </button>
+        </div>
+        <h3>dinning chair</h3>
+        <h4>$19.99</h4>
+    </article>
+    <article class="product">
+        <div class="img-container">
+            <img src="./images/download-1.jpg" alt="product" 
+            class="product-img">
+            <button class="bag-btn" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+            </button>
+        </div>
+        <h3>chair & stool</h3>
+        <h4>$19.99</h4>
+    </article>
+    <article class="product">
+        <div class="img-container">
+            <img src="./images/download-5.jpg" alt="product" 
+            class="product-img">
+            <button class="bag-btn" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+            </button>
+        </div>
+        <h3>wooden dinning chair</h3>
+        <h4>$19.99</h4>
+    </article>
+    <article class="product">
+        <div class="img-container">
+            <img src="./images/download-6.jpeg" alt="product" 
+            class="product-img">
+            <button class="bag-btn" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+            </button>
+        </div>
+        <h3>kitchen furniture</h3>
+        <h4>$19.99</h4>
+    </article>
+    <article class="product">
+        <div class="img-container">
+            <img src="./images/download-7.jpg" alt="product" 
+            class="product-img">
+            <button class="bag-btn" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+            </button>
+        </div>
+        <h3>bedroom wardrobe</h3>
+        <h4>$19.99</h4>
+    </article>
+    <article class="product">
+        <div class="img-container">
+            <img src="./images/download-8.jpg" alt="product" 
+            class="product-img">
+            <button class="bag-btn" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+            </button>
+        </div>
+        <h3>wardrobe</h3>
+        <h4>$19.99</h4>
+    </article>
     
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div  >
+        <h2>About us</h2>
+        <p>At furniture shopping cart, we believe that furniture is more than just a functional necessity, it's an expression of your personality and a key component in creating the perfect living space. Whether you're furnishing a new home or refreshing a single room, we're here to help you find the pieces that make your space truly yours. We were inspired by the belief that everyone deserves a home they love, and they set out to make this vision a reality.
+            With a passion for design and a commitment to quality, we began curating a collection of furniture that blends functionality with style. From cozy sofas to elegant dining tables, every piece we offer is carefully selected to meet the needs of modern living.
+            Our mission is to make furniture shopping an enjoyable and hassle-free experience. We aim to provide high quality products of our furniture from trusted manufacturers who share our commitment to quality and craftsmanship. We believe that great design should be accessible to everyone. That's why we strive to keep our prices competitive without compromising on quality.  Your satisfaction is our top priority. Our customer service team is here to assist you every step of the way, from browsing our catalog to final delivery.</p>
     </div>
 </section>
 <!--end of product-->
@@ -178,6 +291,7 @@
                 </div>
             </div>-->
         </div>
+       
         <div class="cart-footer">
         <h3>your total : $ <span class="cart-total">0</span> </h3>
         <button class="clear-cart banner-btn">clear-cart</button>
@@ -188,44 +302,55 @@
 
 <!--            
             
-             -->
+-->
 
+<section class="contact" id="contact">
+    <h2>contact us</h2>
+    
+    <form action="https://formspree.io/f/mblrwnzk" method="POST">
 
+    <div class="inputBox">
+        <div class="input">
+            <span>your name</span>
+            <input name="name" type="text" placeholder="">
+        </div>
+        <div class="input">
+            <span>Phone number</span>
+            <input name="phone-number" type="text" placeholder="">
+        </div>
+    </div>
+    <div class="inputBox">
+        <div class="input">
+            <span>email</span>
+            <input name="email" type="text" placeholder="">
+        </div>
+        <div class="input">
+            <span>company</span>
+            <input name="company " type="text" placeholder="">
+        </div>
+    </div>
+    <div class="inputBox">
+        <div class="input">
+            <span>subject</span>
+            <input name="subject" type="text" placeholder="">
+        </div>
+    </div>
+    <div class="inputBox">
+        <div class="input">
+            <span >your message</span>
+            <textarea  name="message" placeholder="enter your message" id="message" ></textarea>
+        </div>  
+    </div>
+    <div class="inputBox">
+    <div class="input">
+        <span >Ask a question</span>
+        <input name="question" type="text"  placeholder="" class="btn" >
+    </div>
+  </div>
+  <input name="submit" type="submit" value="submit" class="btn">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</form>
+</section>
 
     <script src="./index.js"></script>
 </body>
