@@ -6,6 +6,12 @@
     --mainGrey: #ececec;
     --mainSpacing: 0.1rem;
     --mainTransition: all 0.3s linear;
+    text-transform: uppercase;
+  }
+  html {
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
   }
   * {
     margin: 0;
@@ -17,7 +23,7 @@
     background: var(--mainWhite);
     font-family: "Lato", sans-serif;
   }
-
+  
   .navbar {
     position: sticky;
     top: 0;
@@ -37,9 +43,46 @@
     justify-content: space-between;
     padding: 0 1.5rem;
   }
+
+/* Hide the list initially */
+.nav-list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #555;
+  width: 200px;
+}
+
+/* Style the list items */
+.nav-list li {
+  border-bottom: 1px solid #555;
+}
+
+.nav-list li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+
+}
+
+.nav-list li a:hover {
+  background-color: #555;
+}
+
+/* Show the list when menu is active */
+.nav-list.show {
+  display: block;
+}
+
   .nav-icon {
     font-size: 1.5rem;
   }
+
   .cart-btn {
     position: relative;
     cursor: pointer;
@@ -55,7 +98,7 @@
   }
 
 
-  .hero {
+  .home {
     min-height: calc(100vh - 60px);
     background: url("./images/hero-bcg.jpeg") center/cover no-repeat;
     display: flex;
@@ -153,14 +196,29 @@
     letter-spacing: var(--mainSpacing);
     text-align: center;
   }
-  
+  .about  {
+    
+    margin: 1.5rem auto;
+    margin-bottom: 5rem;
+    max-width: 1170px;
+    text-align:left;
+  }
+  .about h2 {
+    text-align: center;
+  }
+  .about p {
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-top: 1rem;
+    letter-spacing: var(--mainSpacing);
+    text-align: center;
+  }
   .product h4 {
     margin-top: 0.7rem;
     letter-spacing: var(--mainSpacing);
     color: var(--primaryColor);
     text-align: center;
   }
-
   .cart-overlay {
     position: fixed;
     top: 0;
@@ -172,6 +230,7 @@
     z-index: 2;
     visibility: hidden;
   }
+  
   .cart {
     position: fixed;
     top: 0;
@@ -253,4 +312,75 @@
     margin-bottom: 1rem;
   }
 
+.contact h2{
+  text-align: center;
+}
+
+  .contact form{
+    max-width:75rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-showdow);
+    border:.1rem solid rgba(0,0,0,.2);
+    background:#fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+.contact form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+.contact form .inputBox .input{
+  width: 100%
+}
+
+.contact form .inputBox .input span{
+  display: block;
+  padding:.5rem 0;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  letter-spacing: var(--mainSpacing);
+  text-align:left;
+
+}
+.contact form .inputBox .input input,
+.contact form .inputBox .input textarea{
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.contact form .inputBox .input input:focus,
+.contact form .inputBox .input textarea:focus{
+    border:.1rem solid var(--green);
+}
+.contact form .inputBox .input textarea{
+  height: 20rem;
+  resize: none;
+}
+ span .submit{
+  background-color: #f09d51;
+}
+ .input .submit{
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+
+ }
+ .inputBox .input .contact form .btn{
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  width: 100%;
+
+}
+
+.contact form .btn{
+  margin-bottom: 0;
+}
 
